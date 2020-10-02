@@ -10,3 +10,56 @@
   --link-blue: #59995da;
   --link-hover: #265080;
 }
+
+/* global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 10px;
+  line-height: 1.6em;
+  font-family: "Montserrat ", sans-serif;
+  background-color: var(--background);
+}
+
+a:link {
+  color: var(--link-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--white);
+  color: var(--font-main);
+  box-shadow: 0 2px 0 rgba(93, 96, 99, 0.1);
+  width: 100vw;
+  font-size: clamp(18px, 1.5vw, 24px);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+
+.header__item {
+  margin: auto 1em;
+}
+
+/* main section */
