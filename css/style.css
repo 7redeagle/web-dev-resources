@@ -88,12 +88,25 @@ a:hover {
   transition: all 0.4s;
 }
 
+.main__accordion::after {
+  content: "\02795";
+  font-size: 1.3em;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
 .active,
 .main__accordion:hover {
   background-color: #ccc;
 }
 
 .main__info {
-  display: none;
   overflow: hidden;
+  display: block;
+  transition: all 0.4s ease-out;
 }
