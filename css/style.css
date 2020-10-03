@@ -76,7 +76,7 @@ a:hover {
 .main__card {
   background-color: var(--white);
   margin: 20px auto;
-  padding: 10px;
+
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(93, 96, 99, 0.1);
 }
