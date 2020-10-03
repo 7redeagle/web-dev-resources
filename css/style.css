@@ -119,3 +119,9 @@ a:hover {
 .main__checkbox {
   cursor: pointer;
 }
+
+.main__link img {
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
