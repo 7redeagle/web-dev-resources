@@ -29,6 +29,7 @@ A website lisitng the resources I found for web development. Due to information 
 
 
 ## Resources
- * [MilanAryal/web-development-resources](https://github.com/MilanAryal/web-development-resources) | Where I got most of my resources. Check it out for more web dev resources. 
+ * [MilanAryal/web-development-resources](https://github.com/MilanAryal/web-development-resources) | Where I got most of my resources. Check it out for more web dev resources.
+ * [Normalize CSS](https://necolas.github.io/normalize.css/) | A modern, HTML5-ready alternative to CSS resets. 
 
 
