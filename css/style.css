@@ -74,6 +74,16 @@ a:hover {
   margin: auto 1em;
 }
 
+.header__item svg {
+  fill: var(--color-link);
+  cursor: pointer;
+}
+
+.header__item svg:hover {
+  fill: var(--color-link-hover);
+  cursor: pointer;
+}
+
 /* dark mode toggle */
 .header__nav input[type="checkbox"] {
   height: 0;
