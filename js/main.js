@@ -1,23 +1,19 @@
-/* checks or unchecks checkbox */
-function check(checked = true) {
-  const cbs = document.querySelectorAll('input[type="checkbox"');
-  cbs.forEach((cb) => {
-    cb.checked = checked;
-  });
-}
+// dark mode toggle
+var darkMode = document.querySelector("input[name=theme]");
 
-/* selects button and attach click event listener */
-const btn = document.querySelector(".main__btn");
-btn.onclick = checkAll;
+darkMode.addEventListener("change", function () {
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+});
 
-/* check all function */
-function checkAll() {
-  check();
-  this.onclick = uncheckAll;
-}
-
-/* uncheck function */
-function uncheckAll() {
-  check(false);
-  this.onclick = checkAll;
-}
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
