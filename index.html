@@ -14,6 +14,14 @@
       <nav class="header__nav">
         <h1 class="header__logo">Web Dev Resources</h1>
         <ul class="header__menu">
+          <li class="header__item">
+            <div class="header__toggle">
+              <input type="checkbox" id="switch" name="theme" /><label
+                for="switch"
+                >Toggle</label
+              >
+            </div>
+          </li>
           <li class="header__item"><a class="header__link">About</a></li>
           <li class="header__item">
             <a class="header__link header__link--btn">Contribute</a>
@@ -27,10 +35,8 @@
       <section id="refer" class="main__card">
         <h2 class="main__title">References and Tutorials</h2>
         <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
+          <ul class="main__list">
+            <li class="main__item">
               <p>
                 <a
                   class="main__link"
@@ -40,9 +46,8 @@
                 /></a>
               </p>
               <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
+            </li>
+            <li class="main__item">
               <p>
                 <a
                   class="main__link"
@@ -52,9 +57,8 @@
                 /></a>
               </p>
               <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
+            </li>
+            <li class="main__item">
               <p>
                 <a
                   class="main__link"
@@ -67,9 +71,8 @@
                 Daily articles about CSS, HTML, JavaScript, and all things
                 related to web design and development.
               </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
+            </li>
+            <li class="main__item">
               <p>
                 <a
                   class="main__link"
@@ -82,9 +85,8 @@
                 Step by step guides and paths to learn different tools or
                 technologies.
               </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
+            </li>
+            <li class="main__item">
               <p>
                 <a
                   class="main__link"
@@ -94,539 +96,20 @@
                 /></a>
               </p>
               <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- frameworks section -->
-      <section id="frame" class="main__card">
-        <h2 class="main__title">Frameworks</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="(https://html5boilerplate.com/"
-                  target="__blank"
-                  >HTML5 Boilerplate<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>The web's most popular front-end template.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="http://getbootstrap.com/"
-                  target="__blank"
-                  >Bootstrap<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Bootstrap is the most popular HTML, CSS, and JS framework for
-                developing responsive, mobile first projects on the web.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="http://foundation.zurb.com/"
-                  target="__blank"
-                  >Foundation<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                The most advanced responsive front-end framework in the world.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a class="main__link" href="http://bulma.io/" target="__blank"
-                  >Bulma<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>A modern CSS framework based on Flexbox.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="http://materializecss.com/"
-                  target="__blank"
-                  >Materialize<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                A modern responsive front-end framework based on Material
-                Design.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://tailwindcss.com/"
-                  target="__blank"
-                  >Tailwind<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                A utility-first CSS framework for rapidly building custom
-                designs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- preprocessor section -->
-      <section id="process" class="main__card">
-        <h2 class="main__title">Preprocessors</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://pugjs.org/api/getting-started.html"
-                  target="__blank"
-                  >Pug<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Pug is a template engine for Node and for the browser that
-                compiles to HTML and has a simplified syntax.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://daringfireball.net/projects/markdown/"
-                  target="__blank"
-                  >Markdown<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>A text-to-HTML conversion tool for web writers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="http://sass-lang.com/"
-                  target="__blank"
-                  >SCSS / Sass<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                The most mature, stable, and powerful professional grade CSS
-                extension language in the world.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="http://coffeescript.org/"
-                  target="__blank"
-                  >CoffeeScript<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                A little language that compiles into JavaScript.
-              </p>
-            </div>
-        </div>
-      </section>
+
       <!-- library section -->
-      <section id="library" class="main__card">
-        <h2 class="main__title">Libraries</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://developer.mozilla.org/en-US/"
-                  target="__blank"
-                  >MDN Web Docs<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.w3schools.com/"
-                  target="__blank"
-                  >W3Schools<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://css-tricks.com/"
-                  target="__blank"
-                  >CSS Tricks<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Daily articles about CSS, HTML, JavaScript, and all things
-                related to web design and development.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://roadmap.sh/"
-                  target="__blank"
-                  >Developer Roadmaps<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Step by step guides and paths to learn different tools or
-                technologies.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.smashingmagazine.com/"
-                  target="__blank"
-                  >Smashing Magazine<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- design libaries -->
-      <section id="design" class="main__card">
-        <h2 class="main__title">Design Libraries: CSS, SVG, PNG and Font Icons</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://developer.mozilla.org/en-US/"
-                  target="__blank"
-                  >MDN Web Docs<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.w3schools.com/"
-                  target="__blank"
-                  >W3Schools<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://css-tricks.com/"
-                  target="__blank"
-                  >CSS Tricks<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Daily articles about CSS, HTML, JavaScript, and all things
-                related to web design and development.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://roadmap.sh/"
-                  target="__blank"
-                  >Developer Roadmaps<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Step by step guides and paths to learn different tools or
-                technologies.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.smashingmagazine.com/"
-                  target="__blank"
-                  >Smashing Magazine<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- web tools -->
-      <section id="web-tools" class="main__card">
-        <h2 class="main__title">Web Tools</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://developer.mozilla.org/en-US/"
-                  target="__blank"
-                  >MDN Web Docs<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.w3schools.com/"
-                  target="__blank"
-                  >W3Schools<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://css-tricks.com/"
-                  target="__blank"
-                  >CSS Tricks<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Daily articles about CSS, HTML, JavaScript, and all things
-                related to web design and development.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://roadmap.sh/"
-                  target="__blank"
-                  >Developer Roadmaps<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Step by step guides and paths to learn different tools or
-                technologies.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.smashingmagazine.com/"
-                  target="__blank"
-                  >Smashing Magazine<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- package managers -->
-      <section id="package" class="main__card">
-        <h2 class="main__title">Package Managers</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://developer.mozilla.org/en-US/"
-                  target="__blank"
-                  >MDN Web Docs<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.w3schools.com/"
-                  target="__blank"
-                  >W3Schools<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://css-tricks.com/"
-                  target="__blank"
-                  >CSS Tricks<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Daily articles about CSS, HTML, JavaScript, and all things
-                related to web design and development.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://roadmap.sh/"
-                  target="__blank"
-                  >Developer Roadmaps<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Step by step guides and paths to learn different tools or
-                technologies.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.smashingmagazine.com/"
-                  target="__blank"
-                  >Smashing Magazine<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- VSCode -->
-      <section id="vscode" class="main__card">
-        <h2 class="main__title">VSCode Extensions</h2>
-        <div class="main__info">
-          <button class="main__btn">Clear/Uncheck All</button>
-          <div class="main__content">
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://developer.mozilla.org/en-US/"
-                  target="__blank"
-                  >MDN Web Docs<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Resources for developers, by developers.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.w3schools.com/"
-                  target="__blank"
-                  >W3Schools<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Online web tutorials.</p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://css-tricks.com/"
-                  target="__blank"
-                  >CSS Tricks<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Daily articles about CSS, HTML, JavaScript, and all things
-                related to web design and development.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://roadmap.sh/"
-                  target="__blank"
-                  >Developer Roadmaps<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>
-                Step by step guides and paths to learn different tools or
-                technologies.
-              </p>
-            </div>
-            <div class="main__item">
-              <p><input class="main__checkbox" type="checkbox" /></p>
-              <p>
-                <a
-                  class="main__link"
-                  href="https://www.smashingmagazine.com/"
-                  target="__blank"
-                  >Smashing Magazine<img src="/images/link-external.svg"
-                /></a>
-              </p>
-              <p>Articles for web designers and developers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   </body>
 </html>
