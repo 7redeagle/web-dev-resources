@@ -74,6 +74,16 @@ a:hover {
   margin: auto 1em;
 }
 
+.header__item svg {
+  fill: var(--color-link);
+  cursor: pointer;
+}
+
+.header__item svg:hover {
+  fill: var(--color-link-hover);
+  cursor: pointer;
+}
+
 /* dark mode toggle */
 .header__nav input[type="checkbox"] {
   height: 0;
@@ -109,7 +119,7 @@ a:hover {
 }
 
 .header__nav input:checked + label:after {
-  left:calc(100% - 5px);
+  left: calc(100% - 5px);
   transform: translateX(-100%);
 }
 
@@ -119,12 +129,11 @@ a:hover {
 
 html.transition,
 html.transition *,
-html.transition *:before, 
+html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
-
 
 /* main section */
 .main {
@@ -158,8 +167,8 @@ html.transition *:after {
   padding-right: 40px;
 }
 
-.main__item:last-child {
-  border: 0;
+.main__link {
+  margin-right: 30px;
 }
 
 @media screen and (max-width: 600px) {
