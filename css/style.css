@@ -171,8 +171,17 @@ html.transition *:after {
   margin-right: 30px;
 }
 
+/* footer */
+footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-card);
+  color: var(--color-text);
+  box-shadow: 0 2px 0 rgba(93, 96, 99, 0.1);
+  width: 100vw;
+  font-size: 1.4em;
+}
+
 @media screen and (max-width: 600px) {
-  .header {
-    font-size: 1em;
-  }
 }
