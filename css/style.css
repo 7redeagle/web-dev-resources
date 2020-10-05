@@ -74,6 +74,58 @@ a:hover {
   margin: auto 1em;
 }
 
+/* dark mode toggle */
+.header__nav input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.header__nav label {
+  display: inline-block;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 22px;
+  background: var(--color-text);
+  border-radius: 100px;
+  position: relative;
+}
+
+.header__nav label:after {
+  content: "";
+  position: absolute;
+  top: 1.7px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: var(--bg-card);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.header__nav input:checked + label {
+  background: var(--color-link);
+}
+
+.header__nav input:checked + label:after {
+  left:calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.header__nav label:active:after {
+  width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before, 
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+
 /* main section */
 .main {
   width: clamp(400px, 70vw, 700px);
@@ -108,12 +160,6 @@ a:hover {
 
 .main__item:last-child {
   border: 0;
-}
-
-.main__link {
-}
-
-.main__link img {
 }
 
 @media screen and (max-width: 600px) {
