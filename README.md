@@ -2,6 +2,8 @@
 
 ## Website with List of Web Dev Resources
 
+[Website](https://tiger-fish.github.io/web-dev-resources/) 
+
 **Table of contents**
 
  * [Introduction](#introduction)
