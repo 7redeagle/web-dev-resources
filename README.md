@@ -2,7 +2,7 @@
 
 [Website](https://tiger-fish.github.io/web-dev-resources/) 
 
-A website lisitng the resources I found for web development. Due to information overload, I decided to shrink the resources down to ones I personally use. 
+A website lisitng the resources I use for web development. 
 
 ## Resources
  * [MilanAryal/web-development-resources](https://github.com/MilanAryal/web-development-resources) | Where I got most of my resources. Check it out for more web dev resources.
