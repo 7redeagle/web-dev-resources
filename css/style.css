@@ -168,7 +168,7 @@ html.transition *:after {
 }
 
 .main__link {
-  margin-right: 30px;
+  padding-right: 20px;
 }
 
 /* footer */
