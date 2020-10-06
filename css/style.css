@@ -97,7 +97,7 @@ a:hover {
   text-indent: -9999px;
   width: 52px;
   height: 22px;
-  background: var(--color-text);
+  background: var(--color-link);
   border-radius: 100px;
   position: relative;
 }
