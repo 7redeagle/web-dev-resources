@@ -2,7 +2,14 @@
 
 [Website](https://tiger-fish.github.io/web-dev-resources/) 
 
-A website lisitng the resources I use for web development. 
+A website listing the resources used for web development. 
+
+## To Contribute 
+1. Fork this repository
+2. Create your feature branch (git checkout -b my-feature)
+3. Commit your changes (git commit -m 'Added some features')
+4. Push to the branch (git push origin my-feature)
+5. Create new Pull Request
 
 ## Resources
  * [MilanAryal/web-development-resources](https://github.com/MilanAryal/web-development-resources) | Where I got most of my resources. Check it out for more web dev resources.
