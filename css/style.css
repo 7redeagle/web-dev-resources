@@ -46,6 +46,11 @@ a:hover {
   cursor: pointer;
 }
 
+img {
+  width: 35px;
+  height: 35px;
+}
+
 /* header */
 .header {
   position: sticky;
@@ -64,11 +69,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header__logo-img {
-  width: 35px;
-  height: 35px;
 }
 
 .header__menu {
@@ -186,7 +186,4 @@ footer {
   box-shadow: 0 2px 0 rgba(93, 96, 99, 0.1);
   width: 100vw;
   font-size: 1.4em;
-}
-
-@media screen and (max-width: 600px) {
 }
