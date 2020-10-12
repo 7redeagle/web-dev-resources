@@ -17,3 +17,5 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 1000);
 };
+
+// table of contents
