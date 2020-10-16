@@ -1,6 +1,6 @@
 # Web Dev Resources Website 
 
-[Website](https://tiger-fish.github.io/web-dev-resources/) 
+Website: https://tiger-fish.github.io/web-dev-resources/ 
 
 A website listing the resources used for web development. First website built using purely **HTML**, **CSS**, and **Javascript**. 
 
