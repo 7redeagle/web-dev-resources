@@ -140,7 +140,7 @@ html.transition *:after {
 
 /* main section */
 .main {
-  width: clamp(400px, 70vw, 700px);
+  width: 50vw;
   margin: 10px auto;
   font-size: 1.6em;
   color: var(--color-text);
@@ -186,4 +186,14 @@ footer {
   box-shadow: 0 2px 0 rgba(93, 96, 99, 0.1);
   width: 100vw;
   font-size: 1.4em;
+}
+
+@media (max-width: 800px) {
+  .main {
+    width: 90vw;
+  }
+
+  .header__nav h1 {
+    font-size: 1.4em;
+  }
 }
