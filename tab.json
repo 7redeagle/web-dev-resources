@@ -16,3 +16,14 @@ framworks: [{
 "url": https,
 "description": jfjfjf}],
 }]
+
+// Or this 
+data =[{
+  frameworks: [{ 
+    "title": [Bootstrap, Bootstrap, Boostrap],
+    "url":[url, irl, rulr],
+    "description": [djdjd, djdjdj, ddjdjdj], 
+  }]
+}]
+  
+ var x = descriptions.toString();
