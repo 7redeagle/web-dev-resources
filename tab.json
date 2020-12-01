@@ -27,3 +27,17 @@ data =[{
 }]
   
  var x = descriptions.toString();
+
+
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Links</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>links</td>
+    <td>descr</td>
+  </tr>
+</table>
