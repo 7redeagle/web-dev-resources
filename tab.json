@@ -1,0 +1,43 @@
+data =[{
+  framworks: [{
+"title": Bootstrap,
+"url": https,
+"description": jfjfjf},
+{
+"title": Bootstrap,
+"url": https,
+"description": jfjfjf}],
+framworks: [{
+"title": Bootstrap,
+"url": https,
+"description": jfjfjf},
+{
+"title": Bootstrap,
+"url": https,
+"description": jfjfjf}],
+}]
+
+// Or this 
+data =[{
+  frameworks: [{ 
+    "title": [Bootstrap, Bootstrap, Boostrap],
+    "url":[url, irl, rulr],
+    "description": [djdjd, djdjdj, ddjdjdj], 
+  }]
+}]
+  
+ var x = descriptions.toString();
+
+
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Links</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>links</td>
+    <td>descr</td>
+  </tr>
+</table>
