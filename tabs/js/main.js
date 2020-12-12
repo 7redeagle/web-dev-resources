@@ -1,5 +1,5 @@
 // dark mode toggle
-var darkMode = document.querySelector("input[name=theme]");
+let darkMode = document.querySelector("input[name=theme]");
 
 darkMode.addEventListener("change", function () {
   if (this.checked) {
@@ -17,5 +17,3 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 1000);
 };
-
-// table of contents

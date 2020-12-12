@@ -6,53 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Dev Resources</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <script src="js/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/tab.js"></script>
+  <link rel="stylesheet" href="css/dark.css">
+
 </head>
 
 <body>
   <!-- Hero -->
   <section class="et-hero-tabs">
     <h1>Web Dev Resources</h1>
-    
+    <div class="header__toggle">
+      <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle
+      </label>
+    </div>
     <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">ES6</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-      <a class="et-hero-tab" href="#tab-react">React</a>
-      <a class="et-hero-tab" href="#tab-angular">Angular</a>
-      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <a class="et-hero-tab" href="#tab-frame">Frameworks</a>
+      <a class="et-hero-tab" href="#tab-colors">Colors</a>
+      <a class="et-hero-tab" href="#tab-photos">Photos</a>
+      <a class="et-hero-tab" href="#tab-icons">Icons</a>
+      <a class="et-hero-tab" href="#tab-tools">Tools</a>
+      <a class="et-hero-tab" href="#tab-vscode">VSCode</a>
       <span class="et-hero-tab-slider"></span>
     </div>
   </section>
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>ES6</h1>
-      <h3>something about es6</h3>
+    <section class="et-slide" id="tab-frame">
+      <h1>Frameworks</h1>
+      <table>
+        <tr>
+          <td><a href="google">Bootstrap</a></td>
+          <td>The most popular HTML, CSS, and JS library in the world.</td>
+        </tr>
+        <tr>
+          <td><a href="google">Bootstrap</a></td>
+          <td>The most popular HTML, CSS, and JS library in the world.</td>
+        </tr>
+      </table>
     </section>
-    <section class="et-slide" id="tab-flexbox">
+    <section class="et-slide" id="tab-colors">
       <h1>Flexbox</h1>
       <h3>something about flexbox</h3>
     </section>
-    <section class="et-slide" id="tab-react">
+    <section class="et-slide" id="tab-photos">
       <h1>React</h1>
       <h3>something about react</h3>
     </section>
-    <section class="et-slide" id="tab-angular">
+    <section class="et-slide" id="tab-icons">
       <h1>Angular</h1>
       <h3>something about angular</h3>
     </section>
-    <section class="et-slide" id="tab-other">
+    <section class="et-slide" id="tab-tools">
+      <h1>Other</h1>
+      <h3>something about other</h3>
+    </section>
+    <section class="et-slide" id="tab-vscode">
       <h1>Other</h1>
       <h3>something about other</h3>
     </section>
   </main>
+  <script src="js/jquery.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

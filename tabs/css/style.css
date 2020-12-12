@@ -1,85 +1,30 @@
-/* colors */
-html {
-  --bg: #f6f7f8;
-  --bg-card: #ffffff;
-  --color-headings: #5d6063;
-  --color-text: #5d6063;
-  --color-link: #5995da;
-  --color-link-hover: #265080;
-}
-
-html[data-theme="dark"] {
-  --bg: #414141;
-  --bg-card: #313131;
-  --color-headings: #ffffff;
-  --color-text: #ffffff;
-  --color-link: #21e6c1;
-  --color-link-hover: #278ea5;
-}
-
-/* global */
 html {
   scroll-behavior: smooth;
 }
 
-/* dark mode toggle */
-.header__nav input[type="checkbox"] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.header__nav label {
-  display: inline-block;
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 52px;
-  height: 22px;
-  background: var(--color-link);
-  border-radius: 100px;
-  position: relative;
-}
-
-.header__nav label:after {
-  content: "";
-  position: absolute;
-  top: 1.7px;
-  left: 2px;
-  width: 18px;
-  height: 18px;
-  background: var(--bg-card);
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
-.header__nav input:checked+label {
-  background: var(--color-link);
-}
-
-.header__nav input:checked+label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-.header__nav label:active:after {
-  width: 45px;
-}
-
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
-
-
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
+  background-color: var(--bg);
+  color: var(--color-text)
+}
+
+table {
+  border-collapse: collapse;
+  width: 90vw;
+  margin: 1em;
+}
+
+td {
+  padding: .5em;
 }
 
 a {
   text-decoration: none;
+  color: var(--color-link)
+}
+
+a:hover {
+  color: var(--color-link-hover)
 }
 
 .et-hero-tabs,
@@ -95,7 +40,7 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background: #eee;
+  background: var(--bg-card);
   text-align: center;
   padding: 0 2em;
 }
@@ -103,7 +48,7 @@ a {
 .et-hero-tabs h1,
 .et-slide h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 1em;
   letter-spacing: 1rem;
 }
 
@@ -125,7 +70,7 @@ a {
   width: 100%;
   height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  background: var(--bg);
   z-index: 10;
 }
 
@@ -143,7 +88,7 @@ a {
   align-items: center;
   -webkit-box-flex: 1;
   flex: 1;
-  color: #000;
+  color: var(--color-text);
   letter-spacing: 0.1rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -152,7 +97,7 @@ a {
 
 .et-hero-tab:hover {
   color: white;
-  background: rgba(102, 177, 241, 0.8);
+  background: var(--color-link);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -162,7 +107,7 @@ a {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #66b1f1;
+  background: var(--color-link);
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
