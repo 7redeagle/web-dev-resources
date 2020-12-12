@@ -5,68 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Dev Resources</title>
-  <link rel="stylesheet" href="css/tabs.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/tab.js"></script>
 </head>
 
 <body>
-  <h1>Web Dev Resources</h1>
-
-  <div class="tabs">
-    <input type="radio" id="tab1" name="tab-control" checked>
-    <input type="radio" id="tab2" name="tab-control">
-    <input type="radio" id="tab3" name="tab-control">
-    <input type="radio" id="tab4" name="tab-control">
-    <input type="radio" id="tab5" name="tab-control">
-    <input type="radio" id="tab6" name="tab-control">
-    <ul>
-      <li title="Frameworks"><label for="tab1" role="button"><i class="fab fa-bootstrap"></i>
-          <br><span>Frameworks</span></label></li>
-      <li title="Colors"><label for="tab2" role="button"><i class="fa fa-paint-brush" aria-hidden="true"></i>
-          <br><span>Colors</span></label></li>
-      <li title="Photos"><label for="tab3" role="button"><i class="fas fa-image"></i><br><span>Photos</span></label>
-      </li>
-      <li title="Icons"><label for="tab4" role="button"><i
-            class="fab fa-font-awesome"></i><br><span>Icons</span></label></li>
-      <!-- <li title="Tools"><label for="tab5" role="button"><i class="fas fa-tools"></i><br><span>Tools</span></label></li> -->
-    </ul>
-
-    <div class="slider">
-      <div class="indicator"></div>
+  <!-- Hero -->
+  <section class="et-hero-tabs">
+    <h1>Web Dev Resources</h1>
+    
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">ES6</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
+      <a class="et-hero-tab" href="#tab-react">React</a>
+      <a class="et-hero-tab" href="#tab-angular">Angular</a>
+      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <span class="et-hero-tab-slider"></span>
     </div>
-    <div class="content">
-      <section>
-        <h2>Frameworks</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in
-        eum
-        obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates
-        quibusdam cum?
-      </section>
-      <section>
-        <h2>Colors</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus
-        ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.
-      </section>
-      <section>
-        <h2>Photos</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt
-        voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.
-      </section>
-      <section>
-        <h2>Icons</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto
-        libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque
-        quidem incidunt.
-      </section>
-      <!-- <section>
-        <h2>Tools</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto
-        libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque
-        quidem incidunt.
-      </section> -->
-    </div>
-  </div>
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h1>ES6</h1>
+      <h3>something about es6</h3>
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h1>Flexbox</h1>
+      <h3>something about flexbox</h3>
+    </section>
+    <section class="et-slide" id="tab-react">
+      <h1>React</h1>
+      <h3>something about react</h3>
+    </section>
+    <section class="et-slide" id="tab-angular">
+      <h1>Angular</h1>
+      <h3>something about angular</h3>
+    </section>
+    <section class="et-slide" id="tab-other">
+      <h1>Other</h1>
+      <h3>something about other</h3>
+    </section>
+  </main>
 </body>
 
 </html>

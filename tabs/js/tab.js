@@ -1,40 +1,54 @@
-function json2Table(json) {
-  let cols = Object.keys(json[0]);
-
-
-  //Map over columns, make headers,join into string
-  let headerRow = cols
-    .map(col => `<th>${col}</th>`)
-    .join("");
-
-  //map over array of json objs, for each row(obj) map over column values,
-  //and return a td with the value of that object for its column
-  //take that array of tds and join them
-  //then return a row of the tds
-  //finally join all the rows together
-  let rows = json
-    .map(row => {
-      let tds = cols.map(col => `<td>${row[col]}</td>`).join("");
-      return `<tr>${tds}</tr>`;
-    })
-    .join("");
-
-  //build the table
-  const table = `
-	<table>
-		<thead>
-			<tr>${headerRow}</tr>
-		<thead>
-		<tbody>
-			${rows}
-		<tbody>
-	<table>`;
-
-  return table;
+const data = {
+  "framworks": [{
+      "title": "Bootstrap",
+      "url": "https://getbootstrap.com/",
+      "description": "The most popular HTML, CSS, and JS library in the world."
+    },
+    {
+      "title": "Bulma",
+      "url": "https://bulma.io/",
+      "description": "Bulma is a free, open source CSS framework based on Flexbox and used by more than 200,000 developers."
+    },
+    {
+      "title": "Spectre",
+      "url": "https://picturepan2.github.io/spectre/index.html",
+      "description": "A Lightweight, Responsive and Modern CSS Framework"
+    },
+    {
+      "title": "Pure.css",
+      "url": "https://purecss.io/",
+      "description": "A set of small, responsive CSS modules that you can use in every web project."
+    },
+    {
+      "title": "Foundation",
+      "url": "https://get.foundation/",
+      "description": "A Framework for any device, medium, and accessibility."
+    }
+  ],
+  "colors": [{
+      "title": "Bootstrap",
+      "url": "https://getbootstrap.com/",
+      "description": "The most popular HTML, CSS, and JS library in the world."
+    },
+    {
+      "title": "Bulma",
+      "url": "https://bulma.io/",
+      "description": "Bulma is a free, open source CSS framework based on Flexbox and used by more than 200,000 developers."
+    },
+    {
+      "title": "Spectre",
+      "url": "https://picturepan2.github.io/spectre/index.html",
+      "description": "A Lightweight, Responsive and Modern CSS Framework"
+    },
+    {
+      "title": "Pure.css",
+      "url": "https://purecss.io/",
+      "description": "A set of small, responsive CSS modules that you can use in every web project."
+    },
+    {
+      "title": "Foundation",
+      "url": "https://get.foundation/",
+      "description": "A Framework for any device, medium, and accessibility."
+    }
+  ]
 }
-
-
-output = document.getElementById('output')
-output.innerHTML = json2Table(data)
-
-// html: <p id='output'></p>
