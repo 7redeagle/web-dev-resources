@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Dev Resources</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/dark.css">
-
-</head>
-
-<body>
-  <!-- Hero -->
-  <section class="et-hero-tabs">
-    <h1>Web Dev Resources</h1>
-    <div class="header__toggle">
-      <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle
-      </label>
-    </div>
-    <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-frame">Frameworks</a>
-      <a class="et-hero-tab" href="#tab-colors">Colors</a>
-      <a class="et-hero-tab" href="#tab-photos">Photos</a>
-      <a class="et-hero-tab" href="#tab-icons">Icons</a>
-      <a class="et-hero-tab" href="#tab-tools">Tools</a>
-      <a class="et-hero-tab" href="#tab-vscode">VSCode</a>
-      <span class="et-hero-tab-slider"></span>
-    </div>
-  </section>
-
-  <!-- Main -->
-  <main class="et-main">
-    <section class="et-slide" id="tab-frame">
-      <h1>Frameworks</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="et-hero-tabs">
+      <h1>Web Dev Resources</h1>
+      <div class="header__toggle">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle
+        </label>
+      </div>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-frame">Frameworks</a>
+        <a class="et-hero-tab" href="#tab-colors">Colors</a>
+        <a class="et-hero-tab" href="#tab-images">Images</a>
+        <a class="et-hero-tab" href="#tab-icons">Icons</a>
+        <a class="et-hero-tab" href="#tab-useful">Useful</a>
+        <a class="et-hero-tab" href="#tab-vscode">VSCode</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
     </section>
-    <section class="et-slide" id="tab-colors">
-      <h1>Colors</h1>
-    </section>
-    <section class="et-slide" id="tab-photos">
-      <h1>Photos</h1>
-    </section>
-    <section class="et-slide" id="tab-icons">
-      <h1>Icons</h1>
-    </section>
-    <section class="et-slide" id="tab-tools">
-      <h1>Tools</h1>
-    </section>
-    <section class="et-slide" id="tab-vscode">
-      <h1>VSCode</h1>
-    </section>
-  </main>
-  <script src="js/jquery.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/table.js"></script>
-</body>
-
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="tab-frame">
+        <h1>Frameworks</h1>
+      </section>
+      <section class="et-slide" id="tab-colors">
+        <h1>Colors</h1>
+      </section>
+      <section class="et-slide" id="tab-images">
+        <h1>Images</h1>
+      </section>
+      <section class="et-slide" id="tab-icons">
+        <h1>Icons</h1>
+      </section>
+      <section class="et-slide" id="tab-useful">
+        <h1>Useful</h1>
+      </section>
+      <section class="et-slide" id="tab-vscode">
+        <h1>VSCode</h1>
+        <p>Extensions: Beautify, Prettier, Better Comments, Bracket Pair Colorizer 2,  ESLint, GitLens, ES6, Live Server, Path Intellisense.</p>
+        <p>Settings Json: <br>
+          <code>{
+          "editor.defaultFormatter": "HookyQR.beautify",
+          "beautify.language": {
+          "js": {
+          "type": [
+          "javascript",
+          "json",
+          "jsonc"
+          ],
+          "filename": [
+          ".jshintrc",
+          ".jsbeautifyrc"
+          ]
+          },
+          "css": [
+          "css",
+          "less",
+          "scss"
+          ],
+          "html": [
+          "htm",
+          "html",
+          "njk",
+          "pug",
+          "liquid",
+          "php",
+          "erb"
+          ]
+          },
+          "editor.formatOnSave": true,
+          "editor.formatOnPaste": true,
+          "editor.fontSize": 16,
+          "editor.tabSize": 2,
+          "editor.wordWrap": "on",
+          "explorer.sortOrder": "type",
+          "files.autoSave": "afterDelay",
+          "files.trimFinalNewlines": true,
+          "workbench.editor.highlightModifiedTabs": true,
+          "window.zoomLevel": 0,
+          "git.autofetch": false,
+          "telemetry.enableCrashReporter": false,
+          "telemetry.enableTelemetry": false,
+          "liveServer.settings.donotShowInfoMsg": true
+          }
+          </code>
+        </p>
+      </section>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/table.js"></script>
+  </body>
 </html>
