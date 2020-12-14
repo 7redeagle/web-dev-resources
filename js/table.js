@@ -1,3 +1,5 @@
+const labels = ["title", "url", "description"]
+
 const frameworks = [{
   "title": "Bootstrap",
   "url": "https://getbootstrap.com/",
@@ -112,26 +114,24 @@ buildTable = (objects, container) => {
   let table = document.createElement('table');
   let tableRow = document.createElement('tr');
   for (i = 0; i < objects.length; i++) {
-      var tableTitle = document.createElement('td');
+    let tableTitle = document.createElement('td');
 
-      let tableLink = document.createElement('a');
-      let link = document.createTextNode(`${objects[i].title}`);
-      tableLink.appendChild(link);
-      tableLink.title = `${objects[i].title}`;
-      tableLink.href = `${objects[i].url}`;
-      tableLink.target = `_blank`;
-      tableTitle.appendChild(tableLink);
-      
-      let tableDesc = document.createElement('td');
-      tableDesc.textContent = `${objects[i].description}`  
-      
-      tableRow.appendChild(tableTitle);
-      
+    let tableLink = document.createElement('a');
+    let link = document.createTextNode(`${objects[i].title}`);
+    tableLink.appendChild(link);
+    tableLink.title = `${objects[i].title}`;
+    tableLink.href = `${objects[i].url}`;
+    tableLink.target = `_blank`;
+    tableTitle.appendChild(tableLink);
+
+    let tableDesc = document.createElement('td');
+    tableDesc.textContent = `${objects[i].description}`
+
+    tableRow.appendChild(tableTitle);
   }
   table.appendChild(tableRow);
   container.appendChild(table);
 }
-
 
 buildTable(frameworks, document.getElementById('tab-frame'));
 buildTable(colors, document.getElementById('tab-colors'));
