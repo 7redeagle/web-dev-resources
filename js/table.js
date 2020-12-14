@@ -122,6 +122,7 @@ buildTable = (objects, container) => {
       tableLink.title = `${objects[i].title}`;
       tableLink.href = `${objects[i].url}`;
       tableLink.target = `_blank`;
+      tableLink.rel = `noopener`;
       tableTitle.appendChild(tableLink);
 
       var tableDesc = document.createElement('td');
