@@ -110,13 +110,6 @@ a:hover {
   font-size: 0.8rem;
 }
 
-.et-hero-tab:hover {
-  color: white;
-  background: var(--color-link);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 .et-hero-tab-slider {
   position: absolute;
   bottom: 0;
@@ -143,7 +136,14 @@ a:hover {
     position: fixed;
     top: 0;
   }
+  .et-hero-tab:hover {
+    color: white;
+    background: var(--color-link);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
   table {
     width: 55vw;
+    font-size: 2rem;
   }
 }
