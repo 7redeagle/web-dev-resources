@@ -23,10 +23,6 @@ a {
   color: var(--color-link)
 }
 
-a:hover {
-  color: var(--color-link-hover)
-}
-
 .github-link {
   position: absolute;
   display: block;
@@ -142,6 +138,9 @@ a:hover {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  a:hover {
+  color: var(--color-link-hover)
+  }
   table {
     width: 60vw;
     font-size: 1rem;
@@ -153,7 +152,6 @@ a:hover {
     width: 90vw;
     font-size: 2rem;
   }
-  
   p {
     font-size: 2rem;
   }
