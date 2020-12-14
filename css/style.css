@@ -9,13 +9,13 @@ body {
 }
 
 table {
-  border-collapse: collapse;
   width: 90vw;
   margin: 1em;
 }
 
 td {
-  padding: .5em;
+  padding: 1em;
+  text-align: left;
 }
 
 a {
@@ -51,17 +51,19 @@ a:hover {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background: var(--bg-card);
   text-align: center;
   padding: 0 2em;
+  /* margin: .5em; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
 }
 
 .et-hero-tabs h1,
 .et-slide h1 {
   font-size: 2rem;
-  margin: 1em;
+  margin: .5em;
   letter-spacing: 1rem;
 }
 
@@ -89,7 +91,7 @@ a:hover {
 
 .et-hero-tabs-container--top {
   position: fixed;
-  top: 0;
+  bottom: 0;
 }
 
 .et-hero-tab {
@@ -108,13 +110,6 @@ a:hover {
   font-size: 0.8rem;
 }
 
-.et-hero-tab:hover {
-  color: white;
-  background: var(--color-link);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 .et-hero-tab-slider {
   position: absolute;
   bottom: 0;
@@ -126,18 +121,29 @@ a:hover {
 }
 
 @media (min-width: 800px) {
-
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 3rem;
   }
-
   .et-hero-tabs h3,
   .et-slide h3 {
     font-size: 1rem;
   }
-
   .et-hero-tab {
     font-size: 1rem;
+  }
+  .et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+  }
+  .et-hero-tab:hover {
+    color: white;
+    background: var(--color-link);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  table {
+    width: 55vw;
+    font-size: 2rem;
   }
 }
