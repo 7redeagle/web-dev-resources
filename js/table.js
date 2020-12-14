@@ -113,10 +113,11 @@ const useful = [{
 buildTable = (objects, container) => {
   let table = document.createElement('table');
   let tableRow = document.createElement('tr');
+
   for (i = 0; i < objects.length; i++) {
     let tableTitle = document.createElement('td');
-
     let tableLink = document.createElement('a');
+
     let link = document.createTextNode(`${objects[i].title}`);
     tableLink.appendChild(link);
     tableLink.title = `${objects[i].title}`;
@@ -132,8 +133,6 @@ buildTable = (objects, container) => {
   table.appendChild(tableRow);
   container.appendChild(table);
 }
-
-
 
 buildTable(frameworks, document.getElementById('tab-frame'));
 buildTable(colors, document.getElementById('tab-colors'));
