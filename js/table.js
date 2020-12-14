@@ -133,6 +133,8 @@ buildTable = (objects, container) => {
   container.appendChild(table);
 }
 
+
+
 buildTable(frameworks, document.getElementById('tab-frame'));
 buildTable(colors, document.getElementById('tab-colors'));
 buildTable(images, document.getElementById('tab-images'));
