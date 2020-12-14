@@ -144,6 +144,18 @@ a:hover {
   }
   table {
     width: 90vw;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1800px) {
+   table {
+    width: 90vw;
+    font-size: 2rem;
+  }
+  
+  p {
     font-size: 2rem;
   }
 }
+  
