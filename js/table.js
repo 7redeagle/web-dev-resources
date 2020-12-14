@@ -101,7 +101,7 @@ const useful = [{
 }, {
   "title": "Custom Shape Dividers",
   "url": "https://www.shapedivider.app/",
-  "description": "A ree tool to make it easier for designers and developers to export a beautiful SVG shape divider for their latest project."
+  "description": "A tool to make it easier for designers and developers to export a beautiful SVG shape divider for their latest project."
 }, {
   "title": "Dev Hints",
   "url": "https://devhints.io/",
