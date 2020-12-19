@@ -106,6 +106,10 @@ const useful = [{
   "title": "Dev Hints",
   "url": "https://devhints.io/",
   "description": "A modest collection of cheatsheets."
+}, {
+  "title": "Responsive Web Design Checker",
+  "url": "How responsive is your website?",
+  "description": "A modest collection of cheatsheets."
 }]
 
 buildTable = (objects, container) => {
