@@ -1,4 +1,4 @@
-frameworks = [{
+const frameworks = [{
   "title": "Bootstrap",
   "url": "https://getbootstrap.com/",
   "description": "The most popular HTML, CSS, and JS library in the world."
@@ -20,7 +20,7 @@ frameworks = [{
   "description": "A Framework for any device, medium, and accessibility."
 }]
 
-colors = [{
+const colors = [{
   "title": "Flat UI Colors",
   "url": "https://flatuicolors.com/",
   "description": "Flat UI Colors 2 features 13 more color palettes. Collaborating with 13 designers around the world, a total set of 280 colors are on your command for COPY / PASTE for your next project, design, presentation."
@@ -38,7 +38,7 @@ colors = [{
   "description": "Open color is an open-source color scheme optimized for UI like font, background, border, etc."
 }]
 
-images = [{
+const images = [{
   "title": "Hero Patterns",
   "url": "https://www.heropatterns.com/",
   "description": "A collection of repeatable SVG background patterns for you to use on your web projects."
@@ -64,7 +64,7 @@ images = [{
   "description": "Open Game Art is a media repository intended for use with free and open source software game projects, offering open content assets."
 }]
 
-icons = [{
+const icons = [{
   "title": "Tabler Icons",
   "url": "https://tablericons.com/",
   "description": "976 Fully customizable free SVG icons. (MIT license)"
@@ -90,7 +90,7 @@ icons = [{
   "description": "Simply beautiful open source icons."
 }]
 
-useful = [{
+const useful = [{
   "title": "UI Coach",
   "url": "https://uicoach.io/app",
   "description": "UI Design Challenge."
